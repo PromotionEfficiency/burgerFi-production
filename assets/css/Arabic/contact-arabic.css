@@ -1,0 +1,250 @@
+@font-face {
+    font-family: BurgerFi-Arabic;
+    src: url(../../font/GE-SS-Text-Medium_26.otf);
+}
+
+@font-face {
+    font-family: BurgerFi-Arabic-Bold;
+    src: url(../../font/GE_SS_Two_Bold_4.otf);
+}
+
+ :root {
+    --main-color: #8BBF3F;
+    --second-color: #F5F5F5;
+    --lighter-color: #C9C9C9;
+    --darker-color: #616161;
+    --border-r: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: BurgerFi-Arabic !important;
+    /* background: var(--lighter-color) !important; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+.cta-btn {
+    background-color: var(--main-color);
+    padding: 5px 15px;
+    border-radius: var(--border-r);
+}
+
+.fw-bold {
+    font-family: BurgerFi-Arabic-Bold !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.stroke {
+    color: var(--main-color) !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke-width: 1px !important;
+}
+
+.stroke-white {
+    color: white !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke-width: 1px !important;
+}
+
+
+/* ---------------------------------NAV------------------------------- */
+
+header {
+    background-color: var(--second-color);
+    height: 62px;
+}
+
+#menubtn {
+    background-color: var(--main-color);
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+
+#logo {
+    width: 300px;
+}
+
+.navbar {
+    background: #F5F5F5;
+    z-index: 100;
+}
+
+@media screen and (max-width: 788px) {
+    #logo {
+        width: 200px;
+    }
+}
+
+
+/* ---------------------------------About us hero------------------------------- */
+
+.aboutus-hero {
+    height: 45vh;
+    background-image: linear-gradient(rgba(0, 0, 8, 0.7), rgba(22, 0, 0, 0.7)), url(../../imgs/abourhero2.jpg);
+    background-position: bottom center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.aboutus-hero div h1 span {
+    color: var(--main-color);
+}
+
+
+/* ---------------------------------Form------------------------------- */
+
+.form,
+.map {
+    background-image: url(../../imgs/pattern.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.form .container {
+    background: #f5f5f5;
+    padding: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.form-control {
+    text-align: right;
+}
+
+.form .d-flex form {
+    flex: 2;
+}
+
+.form .d-flex section {
+    flex: 1;
+}
+
+.form form h2 span {
+    color: var(--main-color);
+}
+
+.form .address {
+    background-image: linear-gradient(rgba(0, 0, 8, 0.8), rgba(22, 0, 0, 0.8)), url(../../imgs/adrress-bg.png);
+    /* box-shadow: 0px -1px 13px 0px rgba(136, 136, 136, 0.6); */
+    border-radius: 0 15px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.address-det div i {
+    color: var(--main-color);
+}
+
+.address-det div div p,
+.address-det div div p a {
+    color: var(--lighter-color);
+}
+
+button.btn.btn-primary {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: var(--border-r);
+}
+
+@media screen and (max-width: 788px) {
+    .form .container {
+        border-radius: 0;
+    }
+    .form .address {
+        border-radius: 0;
+    }
+}
+
+
+/* ---------------------------------Map------------------------------- */
+
+.map .container h1 span {
+    color: var(--main-color);
+}
+
+
+/* ---------------------------------Footer------------------------------- */
+
+footer {
+    background-image: url(../../imgs/background.png);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+#footer-logo {
+    width: 160px;
+}
+
+.footer-container .address ul li a,
+.footer-container .address p {
+    color: var(--lighter-color);
+}
+
+.footer-container .address div {
+    flex: 1;
+}
+
+.address.d-flex.justify-content-center.my-5 {
+    border-bottom: var(--lighter-color) 1px solid;
+    padding: 50px 0;
+    border-top: var(--lighter-color) 1px solid;
+}
+
+.footer-container .social-media ul i {
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer-container .social-media ul i:hover {
+    color: var(--main-color);
+    background-color: white;
+}
+
+@media screen and (max-width: 1500px) {
+    footer {
+        background-image: url(../../imgs/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
